@@ -5,6 +5,9 @@
 *.tfstate
 *.tfstate.*
 
+#Ignore Terraform lock files
+.terraform.*
+
 # Crash log files
 crash.log
 
@@ -26,4 +29,8 @@ override.tf.json
 # !example_override.tf
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
+*tfplan*
+
+#Ignore EC2 Key Pairs
+*.pem
+*.pub
